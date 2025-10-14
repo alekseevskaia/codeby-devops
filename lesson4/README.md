@@ -21,3 +21,7 @@
 ![](images/cpu_memory.png)
 
 ![](images/users_groups.png)
+
+# Task 3
+
+Logs file in typescript_1, typescript_2 and ps-logs.txt in ps-log directory
