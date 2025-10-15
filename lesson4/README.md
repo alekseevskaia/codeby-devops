@@ -31,3 +31,5 @@ Logs file in typescript_1, typescript_2 and ps-logs.txt in ps-log directory
 Log file in java-log directory
 
 # Task 5
+
+Log file in nginx-log directory

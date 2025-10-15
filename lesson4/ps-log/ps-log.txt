@@ -842,4 +842,119 @@ Error: A fatal exception has occurred. Program will exit.
 [?2004h]0;alekseevskaia@meeseeks: ~/codeby-devops/lesson4[01;32malekseevskaia@meeseeks[00m:[01;34m~/codeby-devops/lesson4[00m$ [?2004l
 exit
 Script done.
-[?2004h]0;alekseevskaia@meeseeks: ~/codeby-devops/lesson4[01;32malekseevskaia@meeseeks[00m:[01;34m~/codeby-devops/lesson4
+[?2004h]0;alekseevskaia@meeseeks: ~/codeby-devops/lesson4[01;32malekseevskaia@meeseeks[00m:[01;34m~/codeby-devops/lesson4[00m$ scriptcd lesson4[4Pscript
+[?2004lScript started, output log file is 'typescript'.
+[?2004h]0;alekseevskaia@meeseeks: ~/codeby-devops/lesson4[01;32malekseevskaia@meeseeks[00m:[01;34m~/codeby-devops/lesson4[00m$ java -vesionarsion[1Prsionersion
+[?2004lopenjdk version "11.0.28" 2025-07-15
+OpenJDK Runtime Environment (build 11.0.28+6-post-Ubuntu-1ubuntu122.04.1)
+OpenJDK 64-Bit Server VM (build 11.0.28+6-post-Ubuntu-1ubuntu122.04.1, mixed mode, sharing)
+[?2004h]0;alekseevskaia@meeseeks: ~/codeby-devops/lesson4[01;32malekseevskaia@meeseeks[00m:[01;34m~/codeby-devops/lesson4[00m$ java -version[1Psionarsionhtop[Kps -u alekseevskaiahtop[Kjava -varsion[1Pesionrsion[K[7msudo update-alternatives --config java[27msudo update-alternatives --config java
+[?2004l[sudo] password for alekseevskaia: 
+There are 3 choices for the alternative java (providing /usr/bin/java).
+
+  Selection    Path                                         Priority   Status
+------------------------------------------------------------
+  0            /usr/lib/jvm/java-25-openjdk-amd64/bin/java   2511      auto mode
+* 1            /usr/lib/jvm/java-11-openjdk-amd64/bin/java   1111      manual mode
+  2            /usr/lib/jvm/java-17-openjdk-amd64/bin/java   1711      manual mode
+  3            /usr/lib/jvm/java-25-openjdk-amd64/bin/java   2511      manual mode
+
+Press <enter> to keep the current choice[*], or type selection number: 0 3
+update-alternatives: using /usr/lib/jvm/java-25-openjdk-amd64/bin/java to provide /usr/bin/java (java) in manual mode
+[?2004h]0;alekseevskaia@meeseeks: ~/codeby-devops/lesson4[01;32malekseevskaia@meeseeks[00m:[01;34m~/codeby-devops/lesson4[00m$ java -version
+[?2004lopenjdk version "25" 2025-09-16
+OpenJDK Runtime Environment (build 25+36-Ubuntu-122.04.2)
+OpenJDK 64-Bit Server VM (build 25+36-Ubuntu-122.04.2, mixed mode, sharing)
+[?2004h]0;alekseevskaia@meeseeks: ~/codeby-devops/lesson4[01;32malekseevskaia@meeseeks[00m:[01;34m~/codeby-devops/lesson4[00m$ [?2004l
+exit
+Script done.
+[?2004h]0;alekseevskaia@meeseeks: ~/codeby-devops/lesson4[01;32malekseevskaia@meeseeks[00m:[01;34m~/codeby-devops/lesson4[00m$ mv typescript java-log.txt
+[?2004l[?2004h]0;alekseevskaia@meeseeks: ~/codeby-devops/lesson4[01;32malekseevskaia@meeseeks[00m:[01;34m~/codeby-devops/lesson4[00m$ mv java-log.txt java-log
+[?2004l[?2004h]0;alekseevskaia@meeseeks: ~/codeby-devops/lesson4[01;32malekseevskaia@meeseeks[00m:[01;34m~/codeby-devops/lesson4[00m$ git add .
+[?2004l[?2004h]0;alekseevskaia@meeseeks: ~/codeby-devops/lesson4[01;32malekseevskaia@meeseeks[00m:[01;34m~/codeby-devops/lesson4[00m$ git commit -m""A"d"d" "t"a"s"k" "4"
+[?2004l[lesson4 3e946a7] Add task 4
+ 3 files changed, 736 insertions(+), 1 deletion(-)
+ create mode 100644 lesson4/java-log/java-log.txt
+[?2004h]0;alekseevskaia@meeseeks: ~/codeby-devops/lesson4[01;32malekseevskaia@meeseeks[00m:[01;34m~/codeby-devops/lesson4[00m$ git push origin lesson4
+[?2004lEnumerating objects: 13, done.
+Counting objects:   7% (1/13)Counting objects:  15% (2/13)Counting objects:  23% (3/13)Counting objects:  30% (4/13)Counting objects:  38% (5/13)Counting objects:  46% (6/13)Counting objects:  53% (7/13)Counting objects:  61% (8/13)Counting objects:  69% (9/13)Counting objects:  76% (10/13)Counting objects:  84% (11/13)Counting objects:  92% (12/13)Counting objects: 100% (13/13)Counting objects: 100% (13/13), done.
+Delta compression using up to 16 threads
+Compressing objects:  14% (1/7)Compressing objects:  28% (2/7)Compressing objects:  42% (3/7)Compressing objects:  57% (4/7)Compressing objects:  71% (5/7)Compressing objects:  85% (6/7)Compressing objects: 100% (7/7)Compressing objects: 100% (7/7), done.
+Writing objects:  12% (1/8)Writing objects:  25% (2/8)Writing objects:  37% (3/8)Writing objects:  50% (4/8)Writing objects:  62% (5/8)Writing objects:  75% (6/8)Writing objects:  87% (7/8)Writing objects: 100% (8/8)Writing objects: 100% (8/8), 13.93 KiB | 4.64 MiB/s, done.
+Total 8 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To github.com:alekseevskaia/codeby-devops.git
+   46093a3..3e946a7  lesson4 -> lesson4
+[?2004h]0;alekseevskaia@meeseeks: ~/codeby-devops/lesson4[01;32malekseevskaia@meeseeks[00m:[01;34m~/codeby-devops/lesson4[00m$ mkdir nginx-log.txt[K[K[K[K
+[?2004l[?2004h]0;alekseevskaia@meeseeks: ~/codeby-devops/lesson4[01;32malekseevskaia@meeseeks[00m:[01;34m~/codeby-devops/lesson4[00m$ [7m    sudo apt install nginx[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C    sudo apt install nginx
+[?2004lReading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  chromium-codecs-ffmpeg-extra gstreamer1.0-vaapi libflashrom1 libftdi1-2 libgstreamer-plugins-bad1.0-0 libva-wayland2
+  linux-headers-5.15.0-25 linux-headers-5.15.0-25-generic linux-image-5.15.0-25-generic linux-modules-5.15.0-25-generic
+  linux-modules-extra-5.15.0-25-generic
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  libnginx-mod-http-geoip2 libnginx-mod-http-image-filter libnginx-mod-http-xslt-filter libnginx-mod-mail libnginx-mod-stream
+  libnginx-mod-stream-geoip2 nginx-common nginx-core
+Suggested packages:
+  fcgiwrap nginx-doc
+The following NEW packages will be installed:
+  libnginx-mod-http-geoip2 libnginx-mod-http-image-filter libnginx-mod-http-xslt-filter libnginx-mod-mail libnginx-mod-stream
+  libnginx-mod-stream-geoip2 nginx nginx-common nginx-core
+0 upgraded, 9 newly installed, 0 to remove and 680 not upgraded.
+Need to get 698 kB of archives.
+After this operation, 2 391 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+[33m0% [Working][0m            Get:1 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 nginx-common all 1.18.0-6ubuntu14.7 [40,1 kB]
+[33m1% [1 nginx-common 11,8 kB/40,1 kB 29%][0m[33m                                       7% [Working][0m            Get:2 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libnginx-mod-http-geoip2 amd64 1.18.0-6ubuntu14.7 [12,0 kB]
+[33m8% [2 libnginx-mod-http-geoip2 11,8 kB/12,0 kB 98%][0m[33m                                                   10% [Working][0m             Get:3 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libnginx-mod-http-image-filter amd64 1.18.0-6ubuntu14.7 [15,5 kB]
+[33m12% [3 libnginx-mod-http-image-filter 12,4 kB/15,5 kB 80%][0m[33m                                                          14% [Waiting for headers][0m                         Get:4 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libnginx-mod-http-xslt-filter amd64 1.18.0-6ubuntu14.7 [13,8 kB]
+[33m16% [4 libnginx-mod-http-xslt-filter 13,8 kB/13,8 kB 100%][0m[33m                                                          18% [Waiting for headers][0m                         Get:5 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libnginx-mod-mail amd64 1.18.0-6ubuntu14.7 [45,8 kB]
+[33m19% [5 libnginx-mod-mail 10,5 kB/45,8 kB 23%][0m                                             Get:6 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libnginx-mod-stream amd64 1.18.0-6ubuntu14.7 [73,0 kB]
+[33m30% [6 libnginx-mod-stream 34,4 kB/73,0 kB 47%][0m[33m                                               36% [Waiting for headers][0m                         Get:7 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libnginx-mod-stream-geoip2 amd64 1.18.0-6ubuntu14.7 [10,1 kB]
+[33m37% [7 libnginx-mod-stream-geoip2 4 609 B/10,1 kB 45%][0m[33m                                                        40% [Waiting for headers][0m                         Get:8 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 nginx-core amd64 1.18.0-6ubuntu14.7 [483 kB]
+[33m42% [8 nginx-core 20,7 kB/483 kB 4%][0m[33m                                    97% [Waiting for headers][0m                         Get:9 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 nginx amd64 1.18.0-6ubuntu14.7 [3 878 B]
+[33m                         100% [Working][0m              Fetched 698 kB in 0s (10,9 MB/s)
+Preconfiguring packages ...
+
+7[0;12r8[1ASelecting previously unselected package nginx-common.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 260674 files and directories currently installed.)
+Preparing to unpack .../0-nginx-common_1.18.0-6ubuntu14.7_all.deb ...
+7[13;0f[42m[30mProgress: [  0%][49m[39m [..........................................................................................................] 87[13;0f[42m[30mProgress: [  3%][49m[39m [##........................................................................................................] 8Unpacking nginx-common (1.18.0-6ubuntu14.7) ...
+7[13;0f[42m[30mProgress: [  5%][49m[39m [#####.....................................................................................................] 8Selecting previously unselected package libnginx-mod-http-geoip2.
+Preparing to unpack .../1-libnginx-mod-http-geoip2_1.18.0-6ubuntu14.7_amd64.deb ...
+7[13;0f[42m[30mProgress: [  8%][49m[39m [########..................................................................................................] 8Unpacking libnginx-mod-http-geoip2 (1.18.0-6ubuntu14.7) ...
+7[13;0f[42m[30mProgress: [ 11%][49m[39m [###########...............................................................................................] 8Selecting previously unselected package libnginx-mod-http-image-filter.
+Preparing to unpack .../2-libnginx-mod-http-image-filter_1.18.0-6ubuntu14.7_amd64.deb ...
+7[13;0f[42m[30mProgress: [ 14%][49m[39m [##############............................................................................................] 8Unpacking libnginx-mod-http-image-filter (1.18.0-6ubuntu14.7) ...
+7[13;0f[42m[30mProgress: [ 16%][49m[39m [#################.........................................................................................] 8Selecting previously unselected package libnginx-mod-http-xslt-filter.
+Preparing to unpack .../3-libnginx-mod-http-xslt-filter_1.18.0-6ubuntu14.7_amd64.deb ...
+7[13;0f[42m[30mProgress: [ 19%][49m[39m [####################......................................................................................] 8Unpacking libnginx-mod-http-xslt-filter (1.18.0-6ubuntu14.7) ...
+7[13;0f[42m[30mProgress: [ 22%][49m[39m [######################....................................................................................] 8Selecting previously unselected package libnginx-mod-mail.
+Preparing to unpack .../4-libnginx-mod-mail_1.18.0-6ubuntu14.7_amd64.deb ...
+7[13;0f[42m[30mProgress: [ 24%][49m[39m [#########################.................................................................................] 8Unpacking libnginx-mod-mail (1.18.0-6ubuntu14.7) ...
+7[13;0f[42m[30mProgress: [ 27%][49m[39m [############################..............................................................................] 8Selecting previously unselected package libnginx-mod-stream.
+Preparing to unpack .../5-libnginx-mod-stream_1.18.0-6ubuntu14.7_amd64.deb ...
+7[13;0f[42m[30mProgress: [ 30%][49m[39m [###############################...........................................................................] 8Unpacking libnginx-mod-stream (1.18.0-6ubuntu14.7) ...
+7[13;0f[42m[30mProgress: [ 32%][49m[39m [##################################........................................................................] 8Selecting previously unselected package libnginx-mod-stream-geoip2.
+Preparing to unpack .../6-libnginx-mod-stream-geoip2_1.18.0-6ubuntu14.7_amd64.deb ...
+7[13;0f[42m[30mProgress: [ 35%][49m[39m [#####################################.....................................................................] 8Unpacking libnginx-mod-stream-geoip2 (1.18.0-6ubuntu14.7) ...
+7[13;0f[42m[30mProgress: [ 38%][49m[39m [########################################..................................................................] 8Selecting previously unselected package nginx-core.
+Preparing to unpack .../7-nginx-core_1.18.0-6ubuntu14.7_amd64.deb ...
+7[13;0f[42m[30mProgress: [ 41%][49m[39m [##########################################................................................................] 8Unpacking nginx-core (1.18.0-6ubuntu14.7) ...
+7[13;0f[42m[30mProgress: [ 43%][49m[39m [#############################################.............................................................] 8Selecting previously unselected package nginx.
+Preparing to unpack .../8-nginx_1.18.0-6ubuntu14.7_amd64.deb ...
+7[13;0f[42m[30mProgress: [ 46%][49m[39m [################################################..........................................................] 8Unpacking nginx (1.18.0-6ubuntu14.7) ...
+7[13;0f[42m[30mProgress: [ 49%][49m[39m [###################################################.......................................................] 8Setting up nginx-common (1.18.0-6ubuntu14.7) ...
+7[13;0f[42m[30mProgress: [ 51%][49m[39m [######################################################....................................................] 8debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend requires a screen at least 13 lines tall and 31 columns wide.)
+debconf: falling back to frontend: Readline
+Created symlink /etc/systemd/system/multi-user.target.wants/nginx.service → /lib/systemd/system/nginx.service.
+Could not execute systemctl:  at /usr/bin/deb-systemd-invoke line 142.
+7[13;0f[42m[30mProgress: [ 54%][49m[39m [#########################################################.................................................] 8Setting up libnginx-mod-http-xslt-filter (1.18.0-6ubuntu14.7) ...
+7[13;0f[42m[30mProgress: [ 57%][49m[39m [############################################################..............................................] 87[13;0f[42m[30mProgress: [ 59%][49m[39m [###############################################################...........................................] 8Setting up libnginx-mod-http-geoip2 (1.18.0-6ubuntu14.7) ...
+7[13;0f[42m[30mProgress: [ 62%][49m[39m [#################################################################.........................................] 87[13;0f[42m[30mProgress: [ 65%][49m[39m [####################################################################......................................] 8Setting up libnginx-mod-mail (1.18.0-6ubuntu14.7) ...
+7[13;0f[42m[30mProgress: [ 68%][49m[39m [#######################################################################...................................] 87[13;0f[42m[30mProgress: [ 70%][49m[39m [##########################################################################................................] 8Setting up li
