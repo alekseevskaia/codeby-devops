@@ -5,16 +5,16 @@ Your answer: 74
 Your answer: 4096, 20
 
 3. What is the last isable host address of prefix 182.144.10/29?
-Your answer:
+Your answer:8
 
 4. IP address 10.145.100.6/27 is a part of which host range?
-Your answer:
+Your answer:100.1 to 10.145.
 
 5. How many IP addresses can be assigned to hosts, for Subnet Mask 255.255.255.0?
-Your answer:
+Your answer:254
 
 6. If you need to have 5 subnets, which subnet mask do you use?
-Your answer:
+Your answer:255.255.255.224
 
 7. What is the broadcast address of the prefix 172.18.16.0/21?
-Your answer:
+Your answer:172.18.255.255
