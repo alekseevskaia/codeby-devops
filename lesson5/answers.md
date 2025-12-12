@@ -1,3 +1,5 @@
+# Task 1
+
 1. What is the decimal equivalent of 01001010?
 Your answer: 74
 
@@ -18,3 +20,27 @@ Your answer:255.255.255.224
 
 7. What is the broadcast address of the prefix 172.18.16.0/21?
 Your answer:172.18.255.255
+
+# Task 2
+
+## 1
+
+sudo iptables -A INPUT -p icmp --icmp-type echo-request -j DROP
+
+## 2
+
+sudo nano /etc/ssh/sshd_config
+
+DenyUsers *
+
+Match Address 192.168.56.10
+    AllowUsers *
+
+# Task 3
+
+## 1
+
+## 2
+
+## 3
+
