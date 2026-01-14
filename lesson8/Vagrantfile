@@ -1,0 +1,18 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu/focal64"
+
+  # Server VM
+  config.vm.define "server" do |server|
+    server.vm.hostname = "server"
+    server.vm.provision "shell", path: "server-provision.sh"
+  end
+
+  # Client VM
+  config.vm.define "client" do |client|
+    client.vm.hostname = "client"
+    client.vm.provision "shell", path: "client-provision.sh"
+  end
+end
