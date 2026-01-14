@@ -1,0 +1,15 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("1") do |config|
+  config.vm.box = "ubuntu/jammy64"
+
+  # VM
+  config.vm.define "vm_lesson7" do |vm_lesson7|
+    #vm_lesson7.vm.hostname = "vm_lesson7"
+    vm_lesson7.vm.provision "shell", path: "setup/setup.sh"
+    vm_lesson7.vm.network :forwarded_port, guest: 8084, host: 8084
+    vm_lesson7.vm.network :forwarded_port, guest: 8085, host: 8085
+  end
+
+end
