@@ -38,9 +38,5 @@ Match Address 192.168.56.10
 
 # Task 3
 
-## 1
-
-## 2
-
-## 3
+In folder server
 
