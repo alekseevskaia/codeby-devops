@@ -31,6 +31,10 @@ EOF
 
 mkdir -p /opt/mysql_backup
 chown vagrant:vagrant /opt/mysql_backup
-
 mv /home/vagrant/backup.sh /opt/mysql_backup/backup.sh
 chmod +x /opt/mysql_backup/backup.sh
+
+sudo -u vagrant ssh-keygen -t rsa -b 2048 -f /home/vagrant/.ssh/id_rsa -N ""
+sudo -u vagrant ssh-copy-id -o StrictHostKeyChecking=no vagrant@192.168.56.11
+
+(crontab -l 2>/dev/null; echo "0 * * * * /opt/mysql_backup/backup.sh >> /var/log/mysql_backup.log 2>&1") | crontab -
