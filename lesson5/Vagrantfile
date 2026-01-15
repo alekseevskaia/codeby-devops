@@ -1,0 +1,20 @@
+Vagrantfile# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu/jammy64"
+
+  # Server VM
+  config.vm.define "server" do |server|
+    server.vm.hostname = "server"
+    server.vm.network "private_network", ip: "192.168.56.10"
+    server.vm.provision "shell", path: "server/setup-openvpn.sh"
+  end
+
+  # Client VM
+  config.vm.define "client" do |client|
+    client.vm.hostname = "client"
+    client.vm.network "private_network", ip: "192.168.56.11"
+    client.vm.provision "shell", path: "client/setup-client.sh"
+  end
+end
