@@ -1,0 +1,22 @@
+Vagrant.configure("2") do |config|
+  config.vm.box = "alvistack/ubuntu-24.04"
+
+  config.vm.define "server" do |server|
+    server.vm.hostname = "server"
+    server.vm.network "private_network", ip: "192.168.56.10"
+    server.vm.provision "shell", inline: <<-SHELL
+      mkdir /home/vagrant/.ssh
+      cat /home/vagrant/.ssh/vagrant_key.pub >> /home/vagrant/.ssh/authorized_keys
+    SHELL
+  end
+
+  config.vm.define "client" do |client|
+    client.vm.hostname = "client"
+    client.vm.network "private_network", ip: "192.168.56.11"
+    client.vm.provision "shell", inline: <<-SHELL
+      mkdir /home/vagrant/.ssh
+      echo "192.168.56.10 server" >> /etc/hosts
+    SHELL 
+  end
+
+end

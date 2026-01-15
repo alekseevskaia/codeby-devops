@@ -1,0 +1,238 @@
+Script started on 2025-10-19 18:25:02+03:00 [TERM="xterm-256color" TTY="/dev/pts/8" COLUMNS="209" LINES="28"]
+[?2004h]0;alekseevskaia@iriska: ~/codeby-devops/lesson6[01;32malekseevskaia@iriska[00m:[01;34m~/codeby-devops/lesson6[00m$ u[Ksudo lxc laugnch[1Pnch[C[C[C ubuntu:18.04 container
+[?2004l
+sudo: unable to resolve host iriska.intra.ispras.ru: Name or service not known
+
+[sudo] password for alekseevskaia: 
+Launching container
+
+Retrieving image: metadata: 100% (1.25GB/s)
+                                            
+Retrieving image: rootfs: 1% (5.90MB/s)
+                                            
+Retrieving image: rootfs: 2% (10.40MB/s)
+                                            
+Retrieving image: rootfs: 3% (14.60MB/s)
+                                            
+Retrieving image: rootfs: 4% (18.06MB/s)
+                                            
+Retrieving image: rootfs: 5% (21.18MB/s)
+                                            
+Retrieving image: rootfs: 6% (24.01MB/s)
+                                            
+Retrieving image: rootfs: 7% (26.33MB/s)
+                                            
+Retrieving image: rootfs: 8% (28.56MB/s)
+                                            
+Retrieving image: rootfs: 9% (30.60MB/s)
+                                            
+Retrieving image: rootfs: 10% (32.26MB/s)
+                                            
+Retrieving image: rootfs: 10% (33.91MB/s)
+                                            
+Retrieving image: rootfs: 11% (35.40MB/s)
+                                            
+Retrieving image: rootfs: 12% (36.71MB/s)
+                                            
+Retrieving image: rootfs: 13% (37.97MB/s)
+                                            
+Retrieving image: rootfs: 14% (39.11MB/s)
+                                            
+Retrieving image: rootfs: 15% (40.16MB/s)
+                                            
+Retrieving image: rootfs: 16% (41.17MB/s)
+                                            
+Retrieving image: rootfs: 17% (42.09MB/s)
+                                            
+Retrieving image: rootfs: 18% (42.93MB/s)
+                                            
+Retrieving image: rootfs: 19% (43.74MB/s)
+                                            
+Retrieving image: rootfs: 19% (44.50MB/s)
+                                            
+Retrieving image: rootfs: 20% (45.19MB/s)
+                                            
+Retrieving image: rootfs: 21% (45.88MB/s)
+                                            
+Retrieving image: rootfs: 22% (46.49MB/s)
+                                            
+Retrieving image: rootfs: 23% (47.11MB/s)
+                                            
+Retrieving image: rootfs: 24% (47.63MB/s)
+                                            
+Retrieving image: rootfs: 25% (48.17MB/s)
+                                            
+Retrieving image: rootfs: 26% (48.70MB/s)
+                                            
+Retrieving image: rootfs: 27% (49.17MB/s)
+                                            
+Retrieving image: rootfs: 28% (49.60MB/s)
+                                            
+Retrieving image: rootfs: 28% (50.06MB/s)
+                                            
+Retrieving image: rootfs: 29% (50.46MB/s)
+                                            
+Retrieving image: rootfs: 30% (50.86MB/s)
+                                            
+Retrieving image: rootfs: 31% (51.25MB/s)
+                                            
+Retrieving image: rootfs: 32% (51.60MB/s)
+                                            
+Retrieving image: rootfs: 33% (51.95MB/s)
+                                            
+Retrieving image: rootfs: 34% (52.30MB/s)
+                                            
+Retrieving image: rootfs: 35% (52.59MB/s)
+                                            
+Retrieving image: rootfs: 36% (52.90MB/s)
+                                            
+Retrieving image: rootfs: 37% (53.20MB/s)
+                                            
+Retrieving image: rootfs: 37% (53.50MB/s)
+                                            
+Retrieving image: rootfs: 38% (53.77MB/s)
+                                            
+Retrieving image: rootfs: 39% (54.02MB/s)
+                                            
+Retrieving image: rootfs: 40% (54.25MB/s)
+                                            
+Retrieving image: rootfs: 41% (54.52MB/s)
+                                            
+Retrieving image: rootfs: 42% (54.75MB/s)
+                                            
+Retrieving image: rootfs: 43% (54.95MB/s)
+                                            
+Retrieving image: rootfs: 44% (55.18MB/s)
+                                            
+Retrieving image: rootfs: 45% (55.40MB/s)
+                                            
+Retrieving image: rootfs: 46% (55.58MB/s)
+                                            
+Retrieving image: rootfs: 46% (55.77MB/s)
+                                            
+Retrieving image: rootfs: 47% (55.99MB/s)
+                                            
+Retrieving image: rootfs: 48% (56.17MB/s)
+                                            
+Retrieving image: rootfs: 49% (56.37MB/s)
+                                            
+Retrieving image: rootfs: 50% (56.54MB/s)
+                                            
+Retrieving image: rootfs: 51% (56.69MB/s)
+                                            
+Retrieving image: rootfs: 52% (56.85MB/s)
+                                            
+Retrieving image: rootfs: 53% (57.02MB/s)
+                                            
+Retrieving image: rootfs: 54% (57.18MB/s)
+                                            
+Retrieving image: rootfs: 55% (57.33MB/s)
+                                            
+Retrieving image: rootfs: 56% (57.47MB/s)
+                                            
+Retrieving image: rootfs: 56% (57.61MB/s)
+                                            
+Retrieving image: rootfs: 57% (57.76MB/s)
+                                            
+Retrieving image: rootfs: 58% (57.87MB/s)
+                                            
+Retrieving image: rootfs: 59% (58.02MB/s)
+                                            
+Retrieving image: rootfs: 60% (58.15MB/s)
+                                            
+Retrieving image: rootfs: 61% (58.27MB/s)
+                                            
+Retrieving image: rootfs: 62% (58.38MB/s)
+                                            
+Retrieving image: rootfs: 63% (58.52MB/s)
+                                            
+Retrieving image: rootfs: 64% (58.63MB/s)
+                                            
+Retrieving image: rootfs: 65% (58.74MB/s)
+                                            
+Retrieving image: rootfs: 65% (58.84MB/s)
+                                            
+Retrieving image: rootfs: 66% (58.95MB/s)
+                                            
+Retrieving image: rootfs: 67% (59.06MB/s)
+                                            
+Retrieving image: rootfs: 68% (59.14MB/s)
+                                            
+Retrieving image: rootfs: 69% (59.26MB/s)
+                                            
+Retrieving image: rootfs: 70% (59.35MB/s)
+                                            
+Retrieving image: rootfs: 71% (59.44MB/s)
+                                            
+Retrieving image: rootfs: 72% (59.56MB/s)
+                                            
+Retrieving image: rootfs: 73% (59.64MB/s)
+                                            
+Retrieving image: rootfs: 74% (59.72MB/s)
+                                            
+Retrieving image: rootfs: 74% (59.81MB/s)
+                                            
+Retrieving image: rootfs: 75% (59.92MB/s)
+                                            
+Retrieving image: rootfs: 76% (59.99MB/s)
+                                            
+Retrieving image: rootfs: 77% (60.06MB/s)
+                                            
+Retrieving image: rootfs: 78% (60.17MB/s)
+                                            
+Retrieving image: rootfs: 79% (60.24MB/s)
+                                            
+Retrieving image: rootfs: 80% (60.28MB/s)
+                                            
+Retrieving image: rootfs: 81% (60.39MB/s)
+                                            
+Retrieving image: rootfs: 82% (60.46MB/s)
+                                            
+Retrieving image: rootfs: 83% (60.50MB/s)
+                                            
+Retrieving image: rootfs: 83% (60.59MB/s)
+                                            
+Retrieving image: rootfs: 84% (60.67MB/s)
+                                            
+Retrieving image: rootfs: 85% (60.73MB/s)
+                                            
+Retrieving image: rootfs: 86% (60.79MB/s)
+                                            
+Retrieving image: rootfs: 87% (60.88MB/s)
+                                            
+Retrieving image: rootfs: 88% (60.92MB/s)
+                                            
+Retrieving image: rootfs: 89% (60.98MB/s)
+                                            
+Retrieving image: rootfs: 90% (61.07MB/s)
+                                            
+Retrieving image: rootfs: 91% (61.12MB/s)
+                                            
+Retrieving image: rootfs: 92% (61.20MB/s)
+                                            
+Retrieving image: rootfs: 92% (61.24MB/s)
+                                            
+Retrieving image: rootfs: 93% (61.31MB/s)
+                                            
+Retrieving image: rootfs: 94% (61.37MB/s)
+                                            
+Retrieving image: rootfs: 95% (61.41MB/s)
+                                            
+Retrieving image: rootfs: 96% (61.48MB/s)
+                                            
+Retrieving image: rootfs: 97% (61.54MB/s)
+                                            
+Retrieving image: rootfs: 98% (61.57MB/s)
+                                            
+Retrieving image: rootfs: 99% (61.64MB/s)
+                                            
+Retrieving image: rootfs: 100% (61.68MB/s)
+Retrieving image: Unpacking image: 100% (3.39GB/s)
+                                                   
+Retrieving image: Unpacking image: 100% (3.39GB/s)
+                                                   
+[?2004h]0;alekseevskaia@iriska: ~/codeby-devops/lesson6[01;32malekseevskaia@iriska[00m:[01;34m~/codeby-devops/lesson6[00m$ sudo lxc launch ubuntu:18.04 container[18Ppython3 leetcode.py [8Pcd programm/python3 leetcode.py sudo lxc launch ubuntu:18.04 container[K[?2004l
+
+exit
+
+Script done on 2025-10-19 18:27:47+03:00 [COMMAND_EXIT_CODE="0"]

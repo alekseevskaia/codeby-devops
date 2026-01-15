@@ -1,0 +1,279 @@
+Script started on 2025-10-19 18:44:18+03:00 [TERM="xterm-256color" TTY="/dev/pts/8" COLUMNS="180" LINES="28"]
+[?2004h]0;alekseevskaia@iriska: ~/codeby-devops[01;32malekseevskaia@iriska[00m:[01;34m~/codeby-devops[00m$ sudo lxc exec cointainer[K[K[K[K[K[K[K[Kntainer /bin/bash
+[?2004l
+sudo: unable to resolve host iriska.intra.ispras.ru: Name or service not known
+
+[sudo] password for alekseevskaia: 
+]0;root@container: ~root@container:~# ps -aux
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0 225044  6136 ?        Ss   15:26   0:00 /sbin/init
+root          56  0.0  0.0  78352  3956 ?        Ss   15:26   0:00 /lib/systemd/systemd-journald
+root          71  0.0  0.0  33364  2256 ?        Ss   15:26   0:00 /lib/systemd/systemd-udevd
+systemd+     283  0.0  0.0  79928  3876 ?        Ss   15:26   0:00 /lib/systemd/systemd-networkd
+systemd+     286  0.0  0.0  70500  4028 ?        Ss   15:26   0:00 /lib/systemd/systemd-resolved
+root         318  0.0  0.0 171164 14464 ?        Ssl  15:26   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         319  0.0  0.0  31756  1932 ?        Ss   15:26   0:00 /usr/sbin/cron -f
+syslog       320  0.0  0.0 197648  2896 ?        Ssl  15:26   0:00 /usr/sbin/rsyslogd -n
+daemon       321  0.0  0.0  28340  1552 ?        Ss   15:26   0:00 /usr/sbin/atd -f
+message+     323  0.0  0.0  50104  2760 ?        Ss   15:26   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         331  0.0  0.0  61976  3760 ?        Ss   15:26   0:00 /lib/systemd/systemd-logind
+root         332  0.0  0.0 287996  4560 ?        Ssl  15:26   0:00 /usr/lib/accountsservice/accounts-daemon
+root         341  0.0  0.0  72308  3704 ?        Ss   15:26   0:00 /usr/sbin/sshd -D
+root         343  0.0  0.0 187768 15872 ?        Ssl  15:26   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         344  0.0  0.0  16424  1476 pts/0    Ss+  15:26   0:00 /sbin/agetty -o -p -- \u --noclear --keep-baud console 115200,38400,9600 linux
+root         345  0.0  0.0 288888  4440 ?        Ssl  15:26   0:00 /usr/lib/policykit-1/polkitd --no-debug
+root         478  0.0  0.0  21912  2684 pts/1    Ss   15:45   0:00 /bin/bash
+root         488  0.0  0.0  40104  2376 pts/1    R+   15:45   0:00 ps -aux
+]0;root@container: ~root@container:~# sudo apt insta\\[K[Kll apache2
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 6%
+
+Reading package lists... 6%
+
+Reading package lists... 10%
+
+Reading package lists... 10%
+
+Reading package lists... 10%
+
+Reading package lists... 10%
+
+Reading package lists... 10%
+
+Reading package lists... 10%
+
+Reading package lists... 29%
+
+Reading package lists... 29%
+
+Reading package lists... 43%
+
+Reading package lists... 43%
+
+Reading package lists... 52%
+
+Reading package lists... 52%
+
+Reading package lists... 56%
+
+Reading package lists... 56%
+
+Reading package lists... 73%
+
+Reading package lists... 73%
+
+Reading package lists... 86%
+
+Reading package lists... 86%
+
+Reading package lists... 95%
+
+Reading package lists... 95%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... Done
+
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree       
+
+
+Reading state information... 0%
+
+Reading state information... 0%
+
+Reading state information... Done
+
+The following packages were automatically installed and are no longer required:
+  efibootmgr libefiboot1 libefivar1 libfreetype6
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  apache2-bin apache2-data apache2-utils libapr1 libaprutil1 libaprutil1-dbd-sqlite3 libaprutil1-ldap liblua5.2-0 ssl-cert
+Suggested packages:
+  www-browser apache2-doc apache2-suexec-pristine | apache2-suexec-custom openssl-blacklist
+The following NEW packages will be installed:
+  apache2 apache2-bin apache2-data apache2-utils libapr1 libaprutil1 libaprutil1-dbd-sqlite3 libaprutil1-ldap liblua5.2-0 ssl-cert
+0 upgraded, 10 newly installed, 0 to remove and 0 not upgraded.
+Need to get 1730 kB of archives.
+After this operation, 7000 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+[33m
+0% [Working][0m
+            
+Get:1 http://archive.ubuntu.com/ubuntu bionic/main amd64 libapr1 amd64 1.6.3-2 [90.9 kB]
+[33m
+1% [1 libapr1 14.2 kB/90.9 kB 16%][0m[33m
+                                  
+6% [Working][0m
+            
+Get:2 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libaprutil1 amd64 1.6.1-2ubuntu0.1 [84.6 kB]
+[33m
+6% [2 libaprutil1 5501 B/84.6 kB 7%][0m[33m
+                                    
+12% [Waiting for headers][0m
+                         
+Get:3 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libaprutil1-dbd-sqlite3 amd64 1.6.1-2ubuntu0.1 [10.6 kB]
+[33m
+12% [3 libaprutil1-dbd-sqlite3 259 B/10.6 kB 2%][0m[33m
+                                                
+15% [Working][0m
+             
+Get:4 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libaprutil1-ldap amd64 1.6.1-2ubuntu0.1 [8752 B]
+[33m
+15% [4 libaprutil1-ldap 930 B/8752 B 11%][0m[33m
+                                         
+17% [Waiting for headers][0m
+                         
+Get:5 http://archive.ubuntu.com/ubuntu bionic/main amd64 liblua5.2-0 amd64 5.2.4-1.1build1 [108 kB]
+[33m
+17% [5 liblua5.2-0 574 B/108 kB 1%][0m[33m
+                                   
+24% [Working][0m
+             
+Get:6 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 apache2-bin amd64 2.4.29-1ubuntu4.27 [1071 kB]
+[33m
+24% [6 apache2-bin 3502 B/1071 kB 0%][0m[33m
+                                     
+76% [Waiting for headers][0m
+                         
+Get:7 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 apache2-utils amd64 2.4.29-1ubuntu4.27 [83.3 kB]
+[33m
+76% [7 apache2-utils 13.4 kB/83.3 kB 16%][0m[33m
+                                         
+81% [Waiting for headers][0m
+                         
+Get:8 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 apache2-data all 2.4.29-1ubuntu4.27 [160 kB]
+[33m
+82% [8 apache2-data 4096 B/160 kB 3%][0m[33m
+                                     
+91% [Working][0m
+             
+Get:9 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 apache2 amd64 2.4.29-1ubuntu4.27 [95.1 kB]
+[33m
+92% [9 apache2 16.0 kB/95.1 kB 17%][0m[33m
+                                   
+97% [Working][0m
+             
+Get:10 http://archive.ubuntu.com/ubuntu bionic/main amd64 ssl-cert all 1.0.39 [17.0 kB]
+[33m
+97% [10 ssl-cert 0 B/17.0 kB 0%][0m[33m
+                                
+100% [Working][0m
+              
+Fetched 1730 kB in 1s (3347 kB/s)
+Preconfiguring packages ...
+
+7[0;27r8[1ASelecting previously unselected package libapr1:amd64.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 29233 files and directories currently installed.)
+Preparing to unpack .../0-libapr1_1.6.3-2_amd64.deb ...
+7[28;0f[42m[30mProgress: [  0%][49m[39m [..............................................................................................................................................................] 87[28;0f[42m[30mProgress: [  2%][49m[39m [###...........................................................................................................................................................] 8Unpacking libapr1:amd64 (1.6.3-2) ...
+7[28;0f[42m[30mProgress: [  4%][49m[39m [######........................................................................................................................................................] 87[28;0f[42m[30mProgress: [  6%][49m[39m [#########.....................................................................................................................................................] 8Selecting previously unselected package libaprutil1:amd64.
+Preparing to unpack .../1-libaprutil1_1.6.1-2ubuntu0.1_amd64.deb ...
+7[28;0f[42m[30mProgress: [  8%][49m[39m [############..................................................................................................................................................] 8Unpacking libaprutil1:amd64 (1.6.1-2ubuntu0.1) ...
+7[28;0f[42m[30mProgress: [ 10%][49m[39m [###############...............................................................................................................................................] 87[28;0f[42m[30mProgress: [ 12%][49m[39m [##################............................................................................................................................................] 8Selecting previously unselected package libaprutil1-dbd-sqlite3:amd64.
+Preparing to unpack .../2-libaprutil1-dbd-sqlite3_1.6.1-2ubuntu0.1_amd64.deb ...
+7[28;0f[42m[30mProgress: [ 14%][49m[39m [#####################.........................................................................................................................................] 8Unpacking libaprutil1-dbd-sqlite3:amd64 (1.6.1-2ubuntu0.1) ...
+7[28;0f[42m[30mProgress: [ 16%][49m[39m [########################......................................................................................................................................] 87[28;0f[42m[30mProgress: [ 18%][49m[39m [###########################...................................................................................................................................] 8Selecting previously unselected package libaprutil1-ldap:amd64.
+Preparing to unpack .../3-libaprutil1-ldap_1.6.1-2ubuntu0.1_amd64.deb ...
+7[28;0f[42m[30mProgress: [ 20%][49m[39m [##############################................................................................................................................................] 8Unpacking libaprutil1-ldap:amd64 (1.6.1-2ubuntu0.1) ...
+7[28;0f[42m[30mProgress: [ 22%][49m[39m [##################################............................................................................................................................] 87[28;0f[42m[30mProgress: [ 24%][49m[39m [#####################################.........................................................................................................................] 8Selecting previously unselected package liblua5.2-0:amd64.
+Preparing to unpack .../4-liblua5.2-0_5.2.4-1.1build1_amd64.deb ...
+7[28;0f[42m[30mProgress: [ 25%][49m[39m [########################################......................................................................................................................] 8Unpacking liblua5.2-0:amd64 (5.2.4-1.1build1) ...
+7[28;0f[42m[30mProgress: [ 27%][49m[39m [###########################################...................................................................................................................] 87[28;0f[42m[30mProgress: [ 29%][49m[39m [##############################################................................................................................................................] 8Selecting previously unselected package apache2-bin.
+Preparing to unpack .../5-apache2-bin_2.4.29-1ubuntu4.27_amd64.deb ...
+7[28;0f[42m[30mProgress: [ 31%][49m[39m [#################################################.............................................................................................................] 8Unpacking apache2-bin (2.4.29-1ubuntu4.27) ...
+7[28;0f[42m[30mProgress: [ 33%][49m[39m [####################################################..........................................................................................................] 87[28;0f[42m[30mProgress: [ 35%][49m[39m [#######################################################.......................................................................................................] 8Selecting previously unselected package apache2-utils.
+Preparing to unpack .../6-apache2-utils_2.4.29-1ubuntu4.27_amd64.deb ...
+7[28;0f[42m[30mProgress: [ 37%][49m[39m [##########################################################....................................................................................................] 8Unpacking apache2-utils (2.4.29-1ubuntu4.27) ...
+7[28;0f[42m[30mProgress: [ 39%][49m[39m [#############################################################.................................................................................................] 87[28;0f[42m[30mProgress: [ 41%][49m[39m [#################################################################.............................................................................................] 8Selecting previously unselected package apache2-data.
+Preparing to unpack .../7-apache2-data_2.4.29-1ubuntu4.27_all.deb ...
+7[28;0f[42m[30mProgress: [ 43%][49m[39m [####################################################################..........................................................................................] 8Unpacking apache2-data (2.4.29-1ubuntu4.27) ...
+7[28;0f[42m[30mProgress: [ 45%][49m[39m [#######################################################################.......................................................................................] 87[28;0f[42m[30mProgress: [ 47%][49m[39m [##########################################################################....................................................................................] 8Selecting previously unselected package apache2.
+Preparing to unpack .../8-apache2_2.4.29-1ubuntu4.27_amd64.deb ...
+7[28;0f[42m[30mProgress: [ 49%][49m[39m [#############################################################################.................................................................................] 8Unpacking apache2 (2.4.29-1ubuntu4.27) ...
+7[28;0f[42m[30mProgress: [ 51%][49m[39m [################################################################################..............................................................................] 87[28;0f[42m[30mProgress: [ 53%][49m[39m [###################################################################################...........................................................................] 8Selecting previously unselected package ssl-cert.
+Preparing to unpack .../9-ssl-cert_1.0.39_all.deb ...
+7[28;0f[42m[30mProgress: [ 55%][49m[39m [######################################################################################........................................................................] 8Unpacking ssl-cert (1.0.39) ...
+7[28;0f[42m[30mProgress: [ 57%][49m[39m [#########################################################################################.....................................................................] 87[28;0f[42m[30mProgress: [ 59%][49m[39m [############################################################################################..................................................................] 8Setting up libapr1:amd64 (1.6.3-2) ...
+7[28;0f[42m[30mProgress: [ 61%][49m[39m [################################################################################################..............................................................] 87[28;0f[42m[30mProgress: [ 63%][49m[39m [###################################################################################################...........................................................] 8Setting up apache2-data (2.4.29-1ubuntu4.27) ...
+7[28;0f[42m[30mProgress: [ 65%][49m[39m [######################################################################################################........................................................] 87[28;0f[42m[30mProgress: [ 67%][49m[39m [#########################################################################################################.....................................................] 8Setting up ssl-cert (1.0.39) ...
+7[28;0f[42m[30mProgress: [ 69%][49m[39m [############################################################################################################..................................................] 87[28;0f[42m[30mProgress: [ 71%][49m[39m [###############################################################################################################...............................................] 8Setting up libaprutil1:amd64 (1.6.1-2ubuntu0.1) ...
+7[28;0f[42m[30mProgress: [ 73%][49m[39m [##################################################################################################################............................................] 87[28;0f[42m[30mProgress: [ 75%][49m[39m [#####################################################################################################################.........................................] 8Setting up liblua5.2-0:amd64 (5.2.4-1.1build1) ...
+7[28;0f[42m[30mProgress: [ 76%][49m[39m [########################################################################################################################......................................] 87[28;0f[42m[30mProgress: [ 78%][49m[39m [###########################################################################################################################...................................] 8Setting up libaprutil1-ldap:amd64 (1.6.1-2ubuntu0.1) ...
+7[28;0f[42m[30mProgress: [ 80%][49m[39m [###############################################################################################################################...............................] 87[28;0f[42m[30mProgress: [ 82%][49m[39m [##################################################################################################################################............................] 8Setting up libaprutil1-dbd-sqlite3:amd64 (1.6.1-2ubuntu0.1) ...
+7[28;0f[42m[30mProgress: [ 84%][49m[39m [#####################################################################################################################################.........................] 87[28;0f[42m[30mProgress: [ 86%][49m[39m [########################################################################################################################################......................] 8Setting up apache2-utils (2.4.29-1ubuntu4.27) ...
+7[28;0f[42m[30mProgress: [ 88%][49m[39m [###########################################################################################################################################...................] 87[28;0f[42m[30mProgress: [ 90%][49m[39m [##############################################################################################################################################................] 8Setting up apache2-bin (2.4.29-1ubuntu4.27) ...
+7[28;0f[42m[30mProgress: [ 92%][49m[39m [#################################################################################################################################################.............] 87[28;0f[42m[30mProgress: [ 94%][49m[39m [####################################################################################################################################################..........] 8Setting up apache2 (2.4.29-1ubuntu4.27) ...
+7[28;0f[42m[30mProgress: [ 96%][49m[39m [#######################################################################################################################################################.......] 8Enabling module mpm_event.
+Enabling module authz_core.
+Enabling module authz_host.
+Enabling module authn_core.
+Enabling module auth_basic.
+Enabling module access_compat.
+Enabling module authn_file.
+Enabling module authz_user.
+Enabling module alias.
+Enabling module dir.
+Enabling module autoindex.
+Enabling module env.
+Enabling module mime.
+Enabling module negotiation.
+Enabling module setenvif.
+Enabling module filter.
+Enabling module deflate.
+Enabling module status.
+Enabling module reqtimeout.
+Enabling conf charset.
+Enabling conf localized-error-pages.
+Enabling conf other-vhosts-access-log.
+Enabling conf security.
+Enabling conf serve-cgi-bin.
+Enabling site 000-default.
+Created symlink /etc/systemd/system/multi-user.target.wants/apache2.service → /lib/systemd/system/apache2.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/apache-htcacheclean.service → /lib/systemd/system/apache-htcacheclean.service.
+7[28;0f[42m[30mProgress: [ 98%][49m[39m [##########################################################################################################################################################....] 8Processing triggers for libc-bin (2.27-3ubuntu1.6) ...
+Processing triggers for systemd (237-3ubuntu10.57) ...
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+Processing triggers for ufw (0.36-0ubuntu0.18.04.2) ...
+Processing triggers for ureadahead (0.100.0-21) ...
+
+7[0;28r8[1A[J]0;root@container: ~root@container:~# 
+[K]0;root@container: ~root@container:~# ^C
+]0;root@container: ~root@container:~# exit
